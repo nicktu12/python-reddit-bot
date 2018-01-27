@@ -1,8 +1,8 @@
 #!/usr/local/lib/python3.6
 import praw
 
-reddit = praw.Reddit('bot1')
-subreddit = reddit.subreddit("learnpython")
+reddit = praw.Reddit('bot2')
+subreddit = reddit.subreddit("pythonforengineers")
 
 for submission in subreddit.hot(limit=5):
     print("Title: ", submission.title)
